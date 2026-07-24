@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Uma página especial feita para a Wudi, pelo seu fã número 1."
+    >
+
+    <title>Do seu fã número 1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="navigation container">
+            <a href="#inicio" class="logo">
+                Do seu fã nº 1
+            </a>
+
+            <a href="#lembrancas" class="navigation-link">
+                Capítulos
+            </a>
+        </nav>
+
+    <div class="hero-content container" id="inicio">
+        <div class="hero-copy">
+                <span class="eyebrow">Uma pequena homenagem</span>
+        
+                <h1>Do seu fã nº 1</h1>
+        
+                <p class="hero-description">
+                    Uma página feita com carinho para guardar mensagens,
+                    momentos e lembranças especiais da Wudi.
+                </p>
+        
+        <div class="hero-actions">
+                    <a href="#lembrancas" class="button button-primary">
+                        Ver capítulos!
+                    </a>
+        
+                    <button
+                        type="button"
+                        class="button button-secondary"
+                        id="musicButton"
+                        aria-pressed="false"
+                    >
+                        Música do dia!
+                    </button>
+        </div>
+    </div>
+        
+            <figure class="hero-photo">
+                <img
+                    src="img/wudi-destaque.jpg"
+                    alt="Retrato especial da Wudi"
+                >
+        
+                <figcaption>
+                    A pessoa que inspirou esta página.
+                </figcaption>
+            </figure>
+        </div>
+        </div>
+
+        <div class="hero-decoration" aria-hidden="true">
+            <span>✦</span>
+            <span>♡</span>
+            <span>✦</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-section container">
+            <div class="intro-card">
+                <span class="section-label">Para a Wudi</span>
+
+                <h2>Motivos pelos quais sou seu fã número 1!</h2>
+
+                <p>
+                    Este espaço irá reunir fotos, mensagens, músicas,
+                    datas importantes e tudo aquilo que faz você
+                    se tornar especial.
+                </p>
+            </div>
+        </section>
+
+        <section
+            class="memories-section container"
+            id="lembrancas"
+        >
+            <div class="section-heading">
+                <span class="section-label">
+                    Coisas que me encantam
+                </span>
+                
+                <h2>
+                    Memórias que me fazem sorrir
+                </h2>
+                
+                <p>
+                    Um detalhe por vez, um capítulo por dia.
+                </p>
+                <p>
+                    Clique nos cartões para revelar cada momento.
+                </p>
+            </div>
+
+            <div class="memories-grid">
+                <article class="memory-card">
+                    <div class="memory-number">01</div>
+
+                    <div class="memory-content">
+                        <time datetime="2026-01-01">
+                            Data especial
+                        </time>
+
+                        <h3>Uma mensagem para começar</h3>
+
+                        <blockquote class="memory-poem">
+                            Há encontros que terminam no dia em que acabam.
+
+                            Outros continuam existindo em lugares estranhos.
+                            
+                            Em uma música que toca sem aviso.
+                            Em uma rua qualquer.
+                            Em um café.
+                            Em um silêncio que, por um instante, volta a ter o mesmo peso de um abraço.
+                            
+                            Curioso...
+                            
+                            A gente passa tanto tempo acreditando que o que marca uma história é a duração.
+                            E, às vezes, o que realmente permanece é a intensidade com que duas vidas se encontraram por alguns momentos.
+                            
+                            Não escrevo isto para pedir espaço na sua vida.
+                            Nem para ocupar seus pensamentos.
+                            
+                            Escrevo porque existem pessoas que deixam uma lembrança tão serena que o tempo não consegue transformá-la em indiferença.
+                            
+                            Talvez você nunca volte a esta página.
+                            Talvez volte daqui a muitos anos.
+                            
+                            Mas, se isso acontecer, espero que exista apenas uma certeza:
+                            
+                            Foi bonito.
+                            
+                            E algumas coisas são bonitas demais para merecer o esquecimento. 
+                            </blockquote>
+
+                        <button
+                            type="button"
+                            class="reveal-button"
+                            data-target="memoryImage1"
+                        >
+                            Mostrar surpresa
+                        </button>
+
+                        <div class="memory-image-wrapper" 
+                        id="memoryImage1"
+                        hidden
+                        >
+                        <img src="img/foto-1.jpg"
+                        alt="Primeira lembrança dedicada à Wudi"
+                        >
+
+                        <div class="memory-caption">
+                            <span class="memory-caption-label">
+                            O que eu nunca te disse:
+                            </span>
+
+                            <p>
+                                A melhor lembrança que tenho de você não aparece em nenhuma foto.
+
+                                E talvez justamente por isso ela nunca tenha deixado de existir.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                   </article>
+               </div>
+        </section>
+
+        <section class="closing-section">
+            <div class="container">
+                <div class="closing-card">
+                    <span class="closing-symbol" aria-hidden="true">
+                        ♡
+                    </span>
+
+                    <h2>Feito para a Wudi</h2>
+
+                    <p>
+                        Porque algumas pessoas merecem páginas inteiras,
+                        não apenas mensagens rápidas.
+                    </p>
+
+                    <span class="signature">
+                        — Do seu fã número 1
+                    </span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>
+                Feito com carinho para a Wudi.
+            </p>
+
+            <a href="#inicio">
+                Voltar ao início
+            </a>
+        </div>
+    </footer>
+
+    <audio id="backgroundMusic" loop>
+        <source src="audio/musica.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
