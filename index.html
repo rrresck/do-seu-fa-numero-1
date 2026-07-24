@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Uma página especial feita para a Wudi, pelo seu fã número 1."
+    >
+
+    <title>Do seu fã número 1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="navigation container">
+            <a href="#inicio" class="logo">
+                Fã nº 1
+            </a>
+
+            <a href="#lembrancas" class="navigation-link">
+                Lembranças
+            </a>
+        </nav>
+
+        <div class="hero-content container" id="inicio">
+            <span class="eyebrow">Uma pequena homenagem</span>
+
+            <h1>Do seu fã número 1</h1>
+
+            <p class="hero-description">
+                Uma página feita com carinho para guardar mensagens,
+                momentos e lembranças especiais da Wudi.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#lembrancas" class="button button-primary">
+                    Ver as lembranças
+                </a>
+
+                <button
+                    type="button"
+                    class="button button-secondary"
+                    id="musicButton"
+                    aria-pressed="false"
+                >
+                    Tocar música
+                </button>
+            </div>
+        </div>
+
+        <div class="hero-decoration" aria-hidden="true">
+            <span>✦</span>
+            <span>♡</span>
+            <span>✦</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-section container">
+            <div class="intro-card">
+                <span class="section-label">Para a Wudi</span>
+
+                <h2>Algumas coisas merecem ser guardadas</h2>
+
+                <p>
+                    Este espaço pode reunir fotos, mensagens, músicas,
+                    datas importantes e tudo aquilo que faz uma lembrança
+                    se tornar especial.
+                </p>
+            </div>
+        </section>
+
+        <section
+            class="memories-section container"
+            id="lembrancas"
+        >
+            <div class="section-heading">
+                <span class="section-label">Nosso pequeno arquivo</span>
+                <h2>Lembranças especiais</h2>
+                <p>
+                    Clique nos cartões para revelar cada momento.
+                </p>
+            </div>
+
+            <div class="memories-grid">
+                <article class="memory-card">
+                    <div class="memory-number">01</div>
+
+                    <div class="memory-content">
+                        <time datetime="2026-01-01">
+                            Data especial
+                        </time>
+
+                        <h3>Uma mensagem para começar</h3>
+
+                        <p>
+                            Aqui você pode escrever uma mensagem dedicada
+                            à Wudi. Substitua este texto por algo pessoal,
+                            sincero e marcante.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="reveal-button"
+                            data-target="memoryImage1"
+                        >
+                            Mostrar lembrança
+                        </button>
+
+                        <div
+                            class="memory-image-wrapper"
+                            id="memoryImage1"
+                            hidden
+                        >
+                            <img
+                                src="img/foto-1.jpg"
+                                alt="Primeira lembrança dedicada à Wudi"
+                            >
+                        </div>
+                    </div>
+                </article>
+
+                <article class="memory-card">
+                    <div class="memory-number">02</div>
+
+                    <div class="memory-content">
+                        <time datetime="2026-01-02">
+                            Outro momento
+                        </time>
+
+                        <h3>Uma lembrança que faz sorrir</h3>
+
+                        <p>
+                            Use este espaço para contar uma história,
+                            registrar uma conversa ou explicar por que
+                            essa foto é importante.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="reveal-button"
+                            data-target="memoryImage2"
+                        >
+                            Mostrar lembrança
+                        </button>
+
+                        <div
+                            class="memory-image-wrapper"
+                            id="memoryImage2"
+                            hidden
+                        >
+                            <img
+                                src="img/foto-2.jpg"
+                                alt="Segunda lembrança dedicada à Wudi"
+                            >
+                        </div>
+                    </div>
+                </article>
+
+                <article class="memory-card">
+                    <div class="memory-number">03</div>
+
+                    <div class="memory-content">
+                        <time datetime="2026-01-03">
+                            Um dia inesquecível
+                        </time>
+
+                        <h3>Para lembrar sempre</h3>
+
+                        <p>
+                            Você pode adicionar quantos cartões desejar.
+                            Basta copiar este bloco e alterar o texto,
+                            a data e o endereço da imagem.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="reveal-button"
+                            data-target="memoryImage3"
+                        >
+                            Mostrar lembrança
+                        </button>
+
+                        <div
+                            class="memory-image-wrapper"
+                            id="memoryImage3"
+                            hidden
+                        >
+                            <img
+                                src="img/foto-3.jpg"
+                                alt="Terceira lembrança dedicada à Wudi"
+                            >
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="closing-section">
+            <div class="container">
+                <div class="closing-card">
+                    <span class="closing-symbol" aria-hidden="true">
+                        ♡
+                    </span>
+
+                    <h2>Feito para a Wudi</h2>
+
+                    <p>
+                        Porque algumas pessoas merecem páginas inteiras,
+                        não apenas mensagens rápidas.
+                    </p>
+
+                    <span class="signature">
+                        — Do seu fã número 1
+                    </span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>
+                Feito com carinho para a Wudi.
+            </p>
+
+            <a href="#inicio">
+                Voltar ao início
+            </a>
+        </div>
+    </footer>
+
+    <audio id="backgroundMusic" loop>
+        <source src="audio/musica.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
