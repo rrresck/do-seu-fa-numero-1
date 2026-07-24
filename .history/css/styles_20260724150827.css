@@ -157,11 +157,11 @@ a {
 }
 
 .hero h1 {
-    max-width: none;
+    max-width: 800px;
     font-family: "Playfair Display", serif;
-    font-size: clamp(3rem, 6vw, 5.8rem);
-    line-height: 1;
-    letter-spacing: -0.03em;
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    line-height: 0.98;
+    letter-spacing: -0.045em;
 }
 
 .hero-description {
