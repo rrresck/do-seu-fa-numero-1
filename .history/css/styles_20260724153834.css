@@ -1,4 +1,4 @@
-:root {
+:root{
     --background:#F6F2EF;
     --surface:#FFFFFF;
     --surface-soft:#EFE7E2;
@@ -73,7 +73,7 @@ a {
     margin-inline: auto;
 }
 
-.hero {
+.hero{
 
     position:relative;
 
@@ -159,7 +159,7 @@ a {
     color: var(--primary-dark);
 }
 
-.hero-content {
+.hero-content{
 
     position:relative;
 
@@ -181,6 +181,70 @@ a {
 
 }
 
+.hero-copy{
+
+    max-width:720px;
+
+}
+
+.hero-photo{
+
+    position:relative;
+
+    margin:0;
+
+    padding:14px;
+
+    border-radius:30px;
+
+    background:
+        rgba(255,255,255,.08);
+
+    backdrop-filter:blur(8px);
+
+    box-shadow:
+        0 35px 80px rgba(0,0,0,.35);
+
+    transform:rotate(2deg);
+
+    transition:.4s;
+
+}
+
+.hero-photo:hover{
+
+    transform:
+        rotate(0deg)
+        translateY(-6px);
+
+}
+
+.hero-photo img{
+
+    display:block;
+
+    width:100%;
+
+    aspect-ratio:4/5;
+
+    object-fit:cover;
+
+    border-radius:22px;
+
+}
+
+.hero-photo figcaption{
+
+    padding-top:14px;
+
+    text-align:center;
+
+    color:rgba(255,255,255,.75);
+
+    font-style:italic;
+
+}
+
 .eyebrow,
 .section-label {
     display: inline-block;
@@ -197,28 +261,14 @@ a {
 
 .hero-copy {
     min-width: 0;
-    max-width: 720px;
 }
 
 .hero h1 {
-
-    max-width:none;
-
-    font-family:
-        "Playfair Display",
-        serif;
-
-    font-size:
-        clamp(
-            3rem,
-            6vw,
-            6rem
-        );
-
-    line-height:1;
-
-    letter-spacing:-.03em;
-
+    max-width: 900px;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(3rem, 6vw, 5.8rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
 }
 
 .hero-photo {
@@ -226,15 +276,8 @@ a {
     margin: 0;
     padding: 14px;
     border-radius: 30px;
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(8px);
-    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.35);
+    background: rgba(255, 255, 255, 0.12);
     transform: rotate(2deg);
-    transition: transform 400ms ease;
-}
-
-.hero-photo:hover {
-    transform: rotate(0deg) translateY(-6px);
 }
 
 .hero-photo::before {
@@ -248,8 +291,6 @@ a {
 }
 
 .hero-photo img {
-    display: block;
-    width: 100%;
     aspect-ratio: 4 / 5;
     border-radius: 22px;
     object-fit: cover;
@@ -257,10 +298,9 @@ a {
 
 .hero-photo figcaption {
     padding: 14px 8px 4px;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.72);
     font-family: "Playfair Display", serif;
     font-size: 0.95rem;
-    font-style: italic;
     text-align: center;
 }
 
@@ -530,6 +570,10 @@ footer {
 @media (max-width: 720px) {
     .hero {
         min-height: 680px;
+    }
+
+    .hero-content {
+        min-height: 500px;
     }
 
     .hero-decoration {
